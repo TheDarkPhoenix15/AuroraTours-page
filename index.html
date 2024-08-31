@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora</title>
+
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/bootstrap.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/jquery-3.6.0.js"></script>
+    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand text-uppercase" href="#">AuroraTours</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousehero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="imgs/12454.jpg" class="d-block w-100 c-image" alt="...">
+            <div class="carousel-caption top-0 mt-4 d-md-block">
+              <p class="fs-3 mt-5 text-capitalize">Discover the hidden world</p>
+              <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
+              <button class="btn btn-primary px-4 py-2 fs-4 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a Tour</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="imgs/2151387574.jpg" class="d-block w-100 c-image" alt="...">
+            <div class="carousel-caption top-0 mt-4 d-md-block">
+              <p class="fs-3 mt-5 text-capitalize">The season has arrived</p>
+              <h1 class="display-1 fw-bolder text-capitalize">3 Available Tours</h1>
+              <button class="btn btn-primary px-4 py-2 fs-4 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a Tour</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="imgs/684.jpg" class="d-block w-100 c-image" alt="...">
+            <div class="carousel-caption top-0 mt-4 d-md-block">
+              <p class="fs-3 mt-5 text-capitalize">Destination activities</p>
+              <h1 class="display-1 fw-bolder text-capitalize">Go glacier hiking</h1>
+              <button class="btn btn-primary px-4 py-2 fs-4 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a Tour</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+
+      <section class="modal fade" tabindex="-1" id="booking-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Book a tour</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+              <form action="#">
+                <div class="row g-2">
+
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <input type="email" id="email1" class="form-control" placeholder="your email">
+                      <label for="email1">Email address</label>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="form-floating">
+                      <select id="select1" class="form-select">
+                        <option>Tromso, Norway - $899</option>
+                        <option>Ryekjavic, Iceland - $799</option>
+                        <option>Yukon, Canada - $849</option>
+                      </select>
+                      <label for="select1">Pick a tour</label>
+                    </div>
+                  </div>   
+
+                </div>                
+              </form>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview">
+        <div class="container d-flex h-100 align-items-center">
+          <div class="row w-100 text-center fs-5">
+            <div class="col-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill me-2" viewBox="0 0 16 16">
+                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849"/>
+              </svg>
+              3 amazing destinations.
+            </div>
+            <div class="col-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet-fill me-2" viewBox="0 0 16 16">
+                <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542s.987-.254 1.194-.542C9.42 6.644 9.5 6.253 9.5 6a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2z"/>
+                <path d="M16 6.5h-5.551a2.7 2.7 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5s-1.613-.412-2.006-.958A2.7 2.7 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5z"/>
+              </svg>
+              Only 5% pay up front.
+            </div>
+            <div class="col-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill me-2" viewBox="0 0 16 16">
+                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+              </svg>
+              1000's of customers.
+            </div>
+          </div>
+          
+        </div>
+        
+      </section>
+
+      <section id="packages" class="py-md-5">
+        <h2 class="text-center my-5">Packages</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg pb-3">
+              <div class="card">
+                <img src="imgs/yukon.jpg" class="card-img-top c-img" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Yukon, Canada - $849</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book tour</a>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg pb-3">
+                <div class="card">
+                  <img src="imgs/tromso.jpg" class="card-img-top c-img" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tromso, Norway - $899</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book tour</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg pb-3">
+                <div class="card">
+                  <img src="imgs/89a240f7a4c9e95b81f921633989064f.jpg" class="card-img-top c-img" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Ryekjavic, Iceland - $799</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book tour</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        
+        </div>
+      </section>
+
+      <section id="faq" class="py-md-5">
+        <h2 class="my-5 text-center">FAQ</h2>
+
+        <div class="container">
+          <div class="accordion w-75 mx-auto" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  How long are the trips?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lol Lol lOL I like to laugh. Well, It can be as long as u desire after paying upfront. lIMIT IS Usually 2 months.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Is the flight included?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lol Lol lOL I like to laugh. Well, It can be as long as u desire after paying upfront. lIMIT IS Usually 2 months.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Can I cancel after booking?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Lol Lol lOL I like to laugh. Well, It can be as long as u desire after paying upfront. lIMIT IS Usually 2 months. Why would you want to cancel??!!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+      
+    <footer class="bg-dark py-5 mt-5 c-footer">
+      <div class="container text-light text-center">
+        <h2 class="display-5 mb-3">AuroraTours</h2>
+        <p class="c-par"><img src="imgs/copyright-svgrepo-com.svg" class="c-imm" alt="..."> Copyright by darkphoenix15. All rights reserved.</p>
+      </div>
+    </footer>
+</body>
+</html>
